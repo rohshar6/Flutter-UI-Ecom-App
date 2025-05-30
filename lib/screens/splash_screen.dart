@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:app/screens/login_screen.dart';
 import 'package:app/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:app/screens/home_screen.dart';
@@ -21,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Duration(seconds: 3),
       () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => OnboardingScreen()),
+        MaterialPageRoute(builder: (context) => LoginScreen()),
       ),
     );
   }
